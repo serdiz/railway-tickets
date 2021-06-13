@@ -1,0 +1,210 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  background: #fff;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  color: #4AB83D;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  font-size: 17px;
+  text-transform: uppercase;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+    position: relative;
+    display: inline-block;
+    margin: 0 25px;
+}
+
+nav ul li:last-child {
+        margin-right: 0;
+    }
+
+nav ul li a {
+        position: relative;
+        font-size: 13px;
+        color: #1a250e;
+        font-weight: 400;
+        text-transform: capitalize;
+        transition: all 0.3s ease-in-out;
+    }
+
+ nav  ul li a:hover,
+   nav ul li.active a {
+            color: #669135;
+        }
+
+nav ul li a.btn {
+            color: #fff;
+        }
+nav ul li a.btn:hover {
+                color: #669135;
+            }
+a.active, a:hover{
+  transition: .5s;
+}
+nav ul li.active::after {
+        content: "";
+        position: absolute;
+        top: auto;
+        bottom: 25px;
+        left: 0;
+        margin: auto;
+        width: 15px;
+        height: 3px;
+        border-radius: 5px;
+        background-color: #669135;
+}
+.btn {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    padding: 12px 30px;
+    font-size: 13px;
+    font-weight: 400;
+    background-color: #669135;
+    color: #fff;
+    border-radius: 5px;
+    letter-spacing: 1.1px;
+    box-shadow: 0px 15px 40px rgba(102, 145, 53, 0.4);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    text-transform: capitalize;
+    border: 1px solid #669135;
+    cursor: pointer;
+}
+.btn:hover {
+        background-color: transparent;
+        color: #669135;
+    }
+.checkbtn{
+  font-size: 30px;
+  color: #4AB83D;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checlbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #34A327;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover, a.active{
+    background: none;
+    color: #40C930;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+section{
+  background: url('http://res.cloudinary.com/simpleview/image/upload/v1528972382/clients/norway/d1cbdd81_95dc_4d03_96bc_a31440b9ca9c_af984979-fba4-43d6-8415-80656c70228b.jpg') no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px)
+}
+.text-center{
+  color: #9c2013;
+  padding: 60px;
+}
+#form{
+  background-color: #ffff;
+  height: 430px;
+  width: 1080px;
+  margin: auto;
+  padding: 20px;
+  opacity: 0.7; 
+  border-radius: 20px;
+}
+#form h3{
+  color: #9c2013;
+  border-bottom: 3px solid #4AB83D;
+  width: 280px;
+  padding: 10px;
+}
+::placeholder{
+  color: #9c2013;
+}
+#input #input-group{
+  padding: 10px;
+  width: 300px;
+  margin: 5px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+  background: transparent;
+  color: #9c2013;
+}
+#input2 #input-group{
+  color: #9c2013;
+  padding: 5px;
+}
+#input2{
+ padding-left: 15px;
+}
+#input3 #input-group{
+  margin-left: 50px;
+  padding: 15px;
+}
+#input3 label{
+  color: #9c2013;
+}
